@@ -5,5 +5,5 @@
 </em></p>
 
 <h1>SCRUM TEAM</h1>
- 👩‍💻 <p>Dargy Julieth Mogollon Lobo</p> 
- 🧑🏽‍💻 <p>Juan David Quimbayo Nuñez</p>
+ 👩‍💻<p>Dargy Julieth Mogollon Lobo</p> 
+ 🧑🏽‍💻<p>Juan David Quimbayo Nuñez</p>
