@@ -1,0 +1,532 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-write:#fff;
+    --color-black: #464646;
+    --color-gray: #C4C4C4;
+    --color-blueDark: #0B1E7A;
+    --color-azul: #008AE3;
+    --color-verdeLimon: #C0CB41;
+    --box-shadow-azul: 0px 0px 10px #00c4ebb1;
+}
+
+html{
+    width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+/********* start style menu y header *********/
+header {
+    background-image: url("/img/bg.png");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+header nav {
+    height: 70px;
+    background: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow-azul);
+}
+.icono {
+    display: none;
+}
+.iconPiano{
+    display: none;
+}
+.enlaces {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces a {
+    border-bottom: 2px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+    color: var(--color-write);
+    text-decoration: none;
+}
+
+.enlaces a:hover, .active {
+    border-bottom: 3px solid var(--color-verdeLimon);
+    border-radius: 9px;
+}
+
+nav .logo {
+    margin: auto 0;
+    height: 40px;
+}
+
+nav .logo img {
+    object-fit: cover;
+    height: inherit;
+    margin-top: 2px;
+}
+
+header .textos {
+    text-align: center;
+    color:var(--color-write);
+    margin-top: 150px;
+}
+
+header .textos h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .textos h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color:var(--color-verdeLimon);
+}
+
+/********* end style menu y header *********/
+
+
+
+/********* start style piano *********/
+.containerPiano {
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    background-color: var(--color-black);
+}
+.textosPiano{
+    width: 100%;
+    height: 16vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    /* background-color: #41cb6d; */
+}
+.tituloPiano{
+    color: var(--color-write);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 2%;
+}
+.parrafoPiano{
+    width: 100%;
+    height: 26vh;
+    margin-top: 3%;
+    /* background-color: #4141cb; */
+}
+.parrafoPiano p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    color: var(--color-write);
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+.imgPiano{
+    width:100%;
+    height: 50vh;
+    /* background-image: url(/img/piano.jpeg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-black);
+    z-index: 1;
+}
+.containerBateria {
+    width:100%;
+    height: 100vh;
+    margin-top:-1%;
+    background-color: #fbff00;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+}
+
+
+
+
+
+
+.containerMarimba {
+    grid-area: containerMarimba;
+    background-color: #44c9fa;
+    height: 90vh;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+}
+footer {
+    grid-area: containerPiano;
+    background-color: #4f4f4f;
+    height: 10vh;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+}
+
+/********* end style piano *********/
+
+
+
+
+
+
+
+/********* CODIGO MEDIA-QUERY 1280,1024,768,640,400 *********/
+
+
+/********** MEDIA-QUERY 1024 *********/
+@media screen and (max-width:1024px) {
+
+    /* STYLE PIANO 1024PX */
+    .containerPiano {
+        display: flex; 
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        background-color: var(--color-black);
+    }
+    .textosPiano{
+        display: flex; 
+        width: 100%;
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        /* background-color: #41cb6d; */
+    }
+    .tituloPiano{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 3%;
+        height: 10vh;
+        /* background-color: #cb41bf;  */
+    }
+    .parrafoPiano{
+        width: 100%;
+        height: 33vh;
+        margin-top: 2%;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        /* background-color: #4141cb; */
+    }
+    .parrafoPiano p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        color: var(--color-write);
+        text-align:center;
+    }
+    .imgPiano{
+        width:100%;
+        margin-top: 6%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerBateria {
+        width:100%;
+        height: 100vh;
+        background-color: #fbff00;
+        margin-top: -3%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;
+    }
+}
+
+
+/********** MEDIA-QUERY 768 *********/
+@media screen and (max-width:768px) {
+    .icono {
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+        color: var(--color-write);
+        background: transparent;
+        padding: 20px;
+        z-index: 100;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    .iconPiano{
+        display: flex;
+    }
+    .enlaces a:hover, .active {
+        border-bottom: 3px solid var(--color-azul);
+        border-radius: 11px;
+    }
+
+    header .textos h1 {
+        font-size: 30px;
+        margin-top: 33%;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: var(--color-verdeLimon)
+    }
+    header .textos h2{
+        color: var(--color-gray);
+        font-size: 20px;
+    }
+
+    .enlaces {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        transition: all 1s ease;
+        /* fallback for old browsers */
+        background: #ADD100;  
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, #7B920A, #ADD100); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, #7B920A, #ADD100); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .uno {
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+    }
+    .dos {
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+    }
+
+    /* STYLE PIANO 768PX */
+    .containerPiano {
+        display: flex; 
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        /* background: #ffae00; */
+    }
+    .textosPiano{
+        display: flex; 
+        width: 100%;
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        /* background-color: #41cb6d; */
+    }
+    .tituloPiano{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 1%;
+        height: 16vh;
+        /* background-color: #cb41bf; */
+    }
+    .parrafoPiano{
+        width: 100%;
+        height: 36vh;
+        margin-top: 1%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        /* background-color: #4141cb; */
+    }
+    .parrafoPiano p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: var(--color-write);
+        text-align:center;
+    }
+    .imgPiano{
+        width:100%;
+        margin-top: 6%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerBateria {
+        width:100%;
+        height: 100vh;
+        background-color: #fbff00;
+        margin-top: -1%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;
+    }
+}
+
+
+
+/********** MEDIA-QUERY 640 *********/
+@media screen and (max-width:640px) {
+    .icono {
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+        color: var(--color-write);
+        background: transparent;
+        padding: 20px;
+        z-index: 100;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    .iconPiano{
+        display: flex;
+    }
+    .enlaces a:hover, .active {
+        border-bottom: 3px solid var(--color-azul);
+        border-radius: 11px;
+    }
+
+    header .textos h1 {
+        font-size: 30px;
+        margin-top: 33%;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: var(--color-verdeLimon)
+    }
+    header .textos h2{
+        color: var(--color-gray);
+        font-size: 20px;
+    }
+
+    .enlaces {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        transition: all 1s ease;
+        /* fallback for old browsers */
+        background: #ADD100;  
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, #7B920A, #ADD100); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, #7B920A, #ADD100); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .uno {
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+
+    }
+    .dos {
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+    }
+
+    /* STYLE PIANO 640 */
+    .containerPiano {
+        display: flex; 
+        width: 100%;
+        height: 120vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        /* background: #ffae00; */
+    }
+    .textosPiano{
+        display: flex; 
+        width: 100%;
+        height: 19vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        /* background-color: #41cb6d; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    .tituloPiano{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 1%;
+        height: 16vh;
+        /* background-color: #cb41bf; */
+    }
+    .parrafoPiano{
+        width: 100%;
+        height: 36vh;
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        /* background-color: #4141cb; */
+    }
+    .parrafoPiano p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: var(--color-write);
+        text-align:center;
+    }
+    .containerBateria {
+        width:100%;
+        height: 100vh;
+        grid-area: containerBateria;
+        background-color: #fbff00;
+        margin-top: -3%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;
+    }
+
+}
+
+
+
+/********** MEDIA-QUERY 400 *********/
+@media screen and (max-width:400px){
+    nav .logo{
+        margin-left: 20px;
+    }
+    .icono{
+        margin-right:20px;
+    }
+
+    header .textos h1 {
+        font-size: 65px;
+    }
+}
+
+
+

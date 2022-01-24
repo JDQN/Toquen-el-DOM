@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/stylePiano.css">
+
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+
+    <title>Toquen el DOM</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="icono" id="icono">
+                <span>&#9776;</span>
+            </div>
+            <div class="enlaces uno" id="enlaces">
+                <a href="#" class="active"><img class="iconPiano" src="img/Inicio.svg" alt="">Inicio</a>
+                <a href="#"><img class="iconPiano" src="img/piano.svg" alt="">Paino</a>
+                <a href="#"><img class="iconPiano" src="img/drums.svg" alt="">Bateria</a>
+                <a href="#"><img class="iconPiano" src="img/marimba.svg" alt="">Marimba</a>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>¡Bienvenido a Toquen el DOM!</h1>
+            <h2>¿Qué instrumento te gustaría tocar?</h2>
+        </div>
+    </header>
+
+
+<!-- start codigo piano -->
+    <section class="containerPiano">
+        <div class="textosPiano">
+            <div class="tituloPiano">
+                <h2>Instrucciones de uso</h2>
+            </div>
+
+            <div class="parrafoPiano">
+                <p>
+                    El piano es un instrumento musical de cuerda que se utiliza
+                    principalmente para la música clásica, la cámara de viento
+                    y la música popular. El piano es un instrumento de cuerda de doble
+                    acabado, con una cuerda de madera, una cuerda de viento y una cuerda de percusión. El piano es
+                    un instrumento de cuerda de doble acabado, con una cuerda de madera, una cuerda de viento y una
+                    cuerda de percusión.
+                </p>
+            </div>   
+        </div>
+
+        <div class="sectionPiano"> 
+            <div class="piano">
+            <button class="white-key C4-key"></button>
+            <button class="black-key Db4-key"></button>
+            <button class="white-key D4-key"></button>
+            <button class="black-key Eb4-key"></button>
+            <button class="white-key E4-key"></button>
+            <button class="white-key F4-key"></button>
+            <button class="black-key Gb4-key"></button>
+            <button class="white-key G4-key"></button>
+            <button class="black-key Ab4-key"></button>
+            <button class="white-key A4-key"></button>
+            <button class="black-key Bb4-key"></button>
+            <button class="white-key B4-key"></button>
+            <button class="white-key C5-key"></button>
+            <button class="black-key Db5-key"></button>
+            <button class="white-key D5-key"></button>
+            <button class="black-key Eb5-key"></button>
+            <button class="white-key E5-key"></button>
+            </div>
+        </div>
+    </section>
+<!-- end codigo piano -->
+
+
+    <section class="containerBateria">
+        <div class=""></div>
+    </section>
+
+    <section class="containerMarimba">
+        <div class="">
+
+        </div>
+    </section>
+
+
+
+    <!-- start footer -->
+    <footer class="footer">FOOTER</footer>
+    <!-- end footer -->
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/piano.js"></script>
+</body>
+
+</html>
