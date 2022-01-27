@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/stylePiano.css">
+    <link rel="stylesheet" href="css/styleMarimba.css">
+    <link rel="stylesheet" href="css/styleBateria.css">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    <!-- ICONOS -->
+    <link rel="shortcut icon" href="img/icono.svg" type="image/x-icon">
+
+    <title>Toquen el DOM</title>
+</head>
+
+
+
+<body>
+
+<!-- start codigo header -->
+    <header id="inicio">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="icono" id="icono">
+                <span>&#9776;</span>
+            </div>
+            <div class="enlaces uno" id="enlaces">
+                <a href="#inicio" class="active"><img class="iconPiano" src="img/Inicio.svg" alt="">Inicio</a>
+                <a href="#piano"><img class="iconPiano" src="img/piano.svg" alt="">Paino</a>
+                <a href="#marimba"><img class="iconPiano" src="img/marimba.svg" alt="">Marimba</a>
+                <a href="#bateria"><img class="iconPiano" src="img/drums.svg" alt="">Bateria</a>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>¡Bienvenido a Toquen el DOM!</h1>
+            <h2>¿Qué instrumento te gustaría tocar?</h2>
+        </div>
+    </header>
+<!-- end codigo header -->
+
+
+
+<!-- start codigo piano -->
+    <section class="containerPiano" id="piano">
+        <div class="textosPiano">
+            <div class="tituloPiano">
+                <h2>PIANO</h2>
+            </div>
+
+            <div class="parrafoPiano">
+                <p>
+                    El piano es un instrumento musical de cuerda que se utiliza
+                    principalmente para la música clásica, la cámara de viento
+                    y la música popular. El piano es un instrumento de cuerda de doble
+                    acabado, con una cuerda de madera, una cuerda de viento y una cuerda de percusión. El piano es
+                    un instrumento de cuerda de doble acabado, con una cuerda de madera, una cuerda de viento y una
+                    cuerda de percusión.
+                </p>
+            </div>
+        </div>
+
+        <div class="sectionPiano">
+            <div class="piano">
+                <button class="white-key C4-key"></button>
+                <button class="black-key Db4-key"></button>
+                <button class="white-key D4-key"></button>
+                <button class="black-key Eb4-key"></button>
+                <button class="white-key E4-key"></button>
+
+                <button class="white-key F4-key"></button>
+                <button class="black-key Gb4-key"></button>
+                <button class="white-key G4-key"></button>
+                <button class="black-key Ab4-key"></button>
+                <button class="white-key A4-key"></button>                
+                <button class="black-key Bb4-key"></button>
+                <button class="white-key B4-key"></button>
+                
+                <button class="white-key C5-key"></button>
+                <button class="black-key Db5-key"></button>
+                <button class="white-key D5-key"></button>
+                <button class="black-key Eb5-key"></button>
+                <button class="white-key E5-key"></button>
+            </div>
+        </div>
+    </section>
+<!-- end codigo piano -->
+
+
+
+<!-- start codigo Marimba -->
+    <section class="sectionMarimba" id="marimba">
+        <div class="textoMarimba">
+            <div class="tituloMarimba">
+                <h2>MARIMBA</h2>
+            </div>
+
+            <div class="parrafoMarimba">
+                <p>
+                    La marimba es un instrumento de percusión, que consiste en una serie de láminas de madera de
+                    distintos tamaños, dispuestas de mayor a menor, cada una con una altura de sonido diferente, que se
+                    golpean con mazos para producir notas musicales. Cada tecla tiene su propia caja de resonancia y el
+                    conjunto está fijo en un armazón con patas.
+                </p>
+            </div>
+        </div>
+
+        </div>
+        <div class="marimba">
+            <div class="palo1"></div>
+            <div class="palo2"></div>
+            <button class="white0-key" id="DO-key"><span> DO </span></button>
+            <button class="white1-key" id="RE-key"><span> RE </span></button>
+            <button class="white2-key" id="MI-key"><span> MI </span></button>
+            <button class="white3-key" id="FA-key"><span> FA </span></button>
+            <button class="white4-key" id="SOL-key"><span> SOL </span></button>
+            <button class="white5-key" id="LA-key"><span> LA </span></button>
+            <button class="white6-key" id="SI-key"><span> SI </span></button>
+            <button class="white7-key" id="DO4-key"><span> DO </span></button>
+            <button class="white8-key" id="RE4-key"><span> RE </span></button>
+            <button class="white9-key" id="MI4-key"><span> MI </span></button>
+        </div>
+    </section>
+<!-- end codigo Marimba -->
+
+
+
+<!-- start codigo bateria -->
+    <section class="containerBateria" id="bateria">
+        <div class="textoBateria">
+            <div class="tituloBateria">
+                <h2> Bateria </h2>
+            </div>
+
+            <div class="parrafoBateria">
+                <p>
+                    La batería es un conjunto de instrumentos musicales de percusión 
+                    que está compuesta por platillos, 
+                    (los tom que son un conjunto de tambores)tom de piso, tom 1 y 2, bombo, 
+                    caja y los hi hat, los cuales se golpean a traves de un par de baquetas.                
+                </p>
+            </div>
+        </div>
+
+        <div class="bateria">
+
+            <div class="set1">
+                <button class="unoB drum numero">1</button>
+                <button class="dosB drum numero">2</button>
+                <button class="tres drum numero">3</button>
+                <button class="cuatro drum numero">4</button>
+            </div>
+
+            <div class="set2">
+                <button class="cinco drum numero">5</button>
+                <button class="seis drum numero">6</button>
+                <button class="siete drum numero">7</button>
+                <button class="ocho drum numero">8</button>
+                <button class="nueve drum numero">9</button>
+            </div>
+        </div>   
+    </section>
+<!-- end codigo Marimba -->
+
+
+<!-- start footer -->
+<footer class="footer">
+    <div class="pie">
+        <p">&copy; Prográmate 2022.</p>
+    </div>
+    <div class="pie2">
+        <p> Términos . Condiciones . Educamás</p>
+    </div>
+</footer>
+<!-- end  footer -->
+
+
+<script src="js/menu.js"></script>
+<script src="js/piano.js"></script>
+<script src="js/marimba.js"></script>
+<script src="js/bateria.js"></script>
+</body>
+</html>
