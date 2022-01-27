@@ -51,6 +51,6 @@ Desarrolla una web para la escuela de música "Toquen el DOM", en la que los usu
 
 ☕ No se pueden utilizar frameworks ni librerías, el desarrollo debe ser vanilla.
 
-
+<br>
 
 <img src="https://github.com/JDQN/Toquen-el-DOM/blob/main/imagenes%20proyecto/1.inicio.png">
